@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "f45eeaae-6ef0-4ff7-865c-847365037f1e",
+		"name": "Player API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44893719",
+		"_collection_link": "https://gurjot-6498087.postman.co/workspace/Gurjot's-Workspace~fd4816db-6df7-409d-803a-51ce236bd15a/collection/44893719-f45eeaae-6ef0-4ff7-865c-847365037f1e?action=share&source=collection_link&creator=44893719"
+	},
+	"item": [
+		{
+			"name": "/v1/players with isAdmin true",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "646bdcef-38b4-471e-a8fb-6c08232a4f2d",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=069632A66141CB27B805AF1F4F18E34B"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v1/players?isAdmin=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"players"
+					],
+					"query": [
+						{
+							"key": "isAdmin",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/players with isAdmin false(Default)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "f243e5f1-70c0-41ed-a58a-7cc61cd8a7c3",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=069632A66141CB27B805AF1F4F18E34B"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v1/players/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"players",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/v1/players/' \\\r\n--header 'Authorization: Basic dXNlcjpmMjQzZTVmMS03MGMwLTQxZWQtYTU4YS03Y2M2MWNkOGE3YzM=' \\\r\n--header 'Cookie: JSESSIONID=069632A66141CB27B805AF1F4F18E34B'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/players/{id} with isAdmin true",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "646bdcef-38b4-471e-a8fb-6c08232a4f2d",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=069632A66141CB27B805AF1F4F18E34B"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v1/players/1?isAdmin=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"players",
+						"1"
+					],
+					"query": [
+						{
+							"key": "isAdmin",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/players/{id} with isAdmin false(Default)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "8bc54d90-66b4-4c85-ab3f-a056d59be5e8",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=069632A66141CB27B805AF1F4F18E34B"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v1/players/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"players",
+						"10"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/v1/players/' \\\r\n--header 'Authorization: Basic dXNlcjpmMjQzZTVmMS03MGMwLTQxZWQtYTU4YS03Y2M2MWNkOGE3YzM=' \\\r\n--header 'Cookie: JSESSIONID=069632A66141CB27B805AF1F4F18E34B'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/players/ai/nickname",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "e28cf337-c364-49df-9e0c-a5f3b4f05714",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpmMjQzZTVmMS03MGMwLTQxZWQtYTU4YS03Y2M2MWNkOGE3YzM="
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=069632A66141CB27B805AF1F4F18E34B"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v1/players/ai/nickname?country=Canada",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"players",
+						"ai",
+						"nickname"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Canada"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/v1/players/' \\\r\n--header 'Authorization: Basic dXNlcjpmMjQzZTVmMS03MGMwLTQxZWQtYTU4YS03Y2M2MWNkOGE3YzM=' \\\r\n--header 'Cookie: JSESSIONID=069632A66141CB27B805AF1F4F18E34B'"
+			},
+			"response": []
+		}
+	]
+}
