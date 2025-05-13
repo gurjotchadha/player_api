@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: playerApi
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: tinyllama
